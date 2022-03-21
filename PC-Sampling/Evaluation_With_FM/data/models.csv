@@ -1,0 +1,7 @@
+ModelID;Name;Configurations;FMFeatures;FMConstraints;FMPCs;FMPCFeatures;PCFeatures;PCConstraints;PCs
+10;axtls;-1;95;190;114;32;80;0;322
+11;fiasco;-1;71;120;16;7;390;0;928
+12;toybox;-1;323;90;14;8;165;0;514
+13;uclibc-ng;-1;270;1561;504;104;3096;0;13548
+14;busybox-1_29_2;-1;1018;997;1131;507;1495;0;3797
+15;linux_2_6_28_6;-1;6888;80715;8838;1696;16950;0;62749

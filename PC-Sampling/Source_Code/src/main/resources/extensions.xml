@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<extensions>
+	<point id="org.spldev.util.cli.CLIFunctionManager">
+	    <extension id="org.spldev.evaluation.CSVReader" />
+	    <extension id="org.spldev.evaluation.PCConverter" />
+	    <extension id="org.spldev.evaluation.PCExtractor" />
+	    <extension id="org.spldev.evaluation.PCGrouper" />
+	    <extension id="org.spldev.evaluation.TWiseEvaluator" />
+	    <extension id="org.spldev.evaluation.TWiseSampler" />
+	</point>
+</extensions>

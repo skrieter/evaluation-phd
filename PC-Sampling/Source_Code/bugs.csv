@@ -1,0 +1,135 @@
+apache-2.4.3;commit;ce0b029d3dc46512ae7fec271d4ca536fe22257b;server/mpm_common.c;AP_MPM_USES_POD;1;1
+apache-2.4.3;commit;1b48bb3c1af572fe256473db502663cc2442cf29;modules/experimental/util_ldap_cache.c;APR_HAS_SHARED_MEMORY;1;1
+apache-2.4.3;commit;728709bcb84ca8bf2202078f9ee470f2f8c48533;os/unix/unixd.c;APR_HAS_SYSVSEM_SERIALIZE;1;1
+apache-2.4.3;commit;f3d438afd9a500bd96d4090121657bf5d4219b34;server/listen.c;APR_HAVE_IPV6;1;1
+apache-2.4.3;commit;826d0b0f6956844f021e3593fdbf91e05308adce;server/mpm/prefork/prefork.c;GPROF;1;1
+apache-2.4.3;commit;c3317ffe425e012d778b2363cbee4be151f2c007;server/mpm/winnt/mpm_winnt.c;WIN32;1;1
+apache-2.4.3;commit;0d5525c2e2f8ed83f13f989dc634cb7c47ed429f;modules/slotmem/mod_slotmem_shm.c;(AP_NEED_SET_MUTEX_PERMS && APR_USE_SHMEM_SHMGET)||(AP_NEED_SET_MUTEX_PERMS && APR_USE_SHMEM_SHMGET_ANON);2;1
+apache-2.4.3;release;apache-2.0.65;modules/ssl/ssl_util.c;APR_HAS_THREADS;1;1
+apache-2.4.3;release;apache-2.4.3;modules/filters/mod_include.c;NETWARE;1;1
+apache-2.4.3;release;apache-2.4.3;support/ab.c;NOT_ASCII;1;1
+apache-2.4.3;release;apache-2.4.3;server/mpm/winnt/mpm_winnt.c;WIN32 && !AP_ENABLE_V4_MAPPED;2;1
+apache-2.4.3;release;apache-2.4.3;os/win32/ap_regkey.c;WIN32 && !APR_HAS_UNICODE_FS && !APR_HAS_ANSI_FS;3;1
+bash-4.2;release;bash-1.14.7;support/getcppsyms.c;plexus;1;1
+bash-4.2;release;bash-4.2;execute_cmd.c;(DPAREN_ARITHMETIC && !COND_COMMAND)||(ARITH_FOR_COMMAND && !COND_COMMAND);2;1
+bison-2.0;commit;96a1981a778d4c72d6fc2f6e9f6be6ce2f6e9fd6;data/push.c;YYERROR_VERBOSE;1;1
+bison-2.0;commit;eb1b07409f0ccad9970c8a60ded9f2a56d205b9c;data/push.c;yyoverflow;1;1
+busybox-1.23.1;commit;syntax error;libbb/verror_msg.c;!ENABLE_FEATURE_SYSLOG;1;1
+busybox-1.23.1;commit;syntax error;miscutils/nandwrite.c;(!ENABLE_FEATURE_TAR_LONG_OPTIONS) || (!ENABLE_FEATURE_GETOPT_LONG);1;1
+busybox-1.23.1;commit;syntax error;util-linux/mdev.c;CONFIG_MDEV && !CONFIG_FEATURE_MDEV_CONF;2;1
+busybox-1.23.1;commit;syntax error;shell/hush.c;ENABLE_FEATURE_EDITING && (!ENABLE_HUSH_INTERACTIVE);2;1
+busybox-1.23.1;commit;syntax error;miscutils/less.c;ENABLE_FEATURE_LESS_WINCH && !ENABLE_FEATURE_LESS_REGEXP;2;1
+busybox-1.23.1;commit;syntax error;archival/tar.c;ENABLE_FEATURE_GETOPT_LONG && !ENABLE_FEATURE_SEAMLESS_LZMA && !ENABLE_FEATURE_TAR_LONG_OPTIONS;3;1
+busybox-1.23.1;commit;syntax error;networking/nc.c;ENABLE_NC && !ENABLE_NC_110_COMPAT && !ENABLE_NC_EXTRA;3;1
+busybox-1.23.1;commit;syntax error;networking/httpd.c;ENABLE_FEATURE_HTTPD_USE_SENDFILE && ENABLE_FEATURE_HTTPD_BASIC_AUTH && !ENABLE_FEATURE_HTTPD_AUTH_MD5 && !PIPE_BUF;4;1
+busybox-1.23.1;commit;syntax error;shell/hush.c;ENABLE_HUSH_CASE && ENABLE_FEATURE_EDITING_SAVE_ON_EXIT && ENABLE_HUSH_INTERACTIVE && !ENABLE_FEATURE_EDITING;4;1
+busybox-1.23.1;commit;syntax error;networking/ftpd.c;CONFIG_FTPD && ENABLE_FEATURE_FTP_AUTHENTICATION && !CONFIG_SU && !CONFIG_VLOCK && !CONFIG_LOGIN && !CONFIG_SULOGIN;6;1
+cherokee-1.2.101;commit;538b621e87ee090334e2cc4778aa66136cc50890;cherokee/main.c;HAVE_POSIX_SHM;1;1
+cherokee-1.2.101;commit;dcd45f001152ef4b6421d36476d1430f5a04fdba;cherokee/thread.c;HAVE_PTHREAD;1;1
+cherokee-1.2.101;release;cherokee-1.2.101;cherokee/access.c;AF_INET6;1;1
+cvs-1.11.17;release;cvs-1.11.17;src/buffer.c;(SHUTDOWN_SERVER && NO_SOCKET_TO_FD && START_RSH_WITH_POPEN_RW)||(!SHUTDOWN_SERVER && NO_SOCKET_TO_FD && START_RSH_WITH_POPEN_RW);3;1
+dia-0.97.2;commit;8ab162c6a98b866da9a2ef457d4fe4a9b7bccf90;lib/prop_text.c;(GTK_DOESNT_TALK_UTF8_WE_DO) || (GTK_TALKS_UTF8_WE_DONT);1;1
+dia-0.97.2;commit;9714f211b494a6b370ea4b6e4635df0e3176dd85;app/app_procs.c;!GNOME && HAVE_POPT;2;1
+dia-0.97.2;release;dia-0.97.2;app/preferences.c;SCROLLED_PAGES;1;1
+firefox-32.0.1;release;Firefox-32.0.1;libjar/nsJAR.cpp;ZIP_CACHE_HIT_RATE && !XP_UNIX;;
+firefox-32.0.1;release;Firefox-32.0.1;zlib/gzread.c;!Z_PREFIX_SET;;
+fvwm-2.4.15;commit;65b2b7579aaf95548eed092a4f4889598ab71edf;fvwm/virtual.c;!NO_REMEMBER_FOCUS;1;1
+fvwm-2.4.15;commit;fb23ef89990201492a3e200dc557537ecd7b541d;fvwm/events.c;EXPERIMENTAL_ANTI_RACE_CONDITION_CODE;1;1
+fvwm-2.4.15;commit;c924549daf137abe0331364caaa198edcd310a17;fvwm/ewmh_icons.c;HAVE_EWMH;1;1
+fvwm-2.4.15;commit;823278808df426e56489bba7ede115e0d897abd3;libs/FlocaleCharset.c;HAVE_XOUTPUT_METHOD;1;1
+fvwm-2.4.15;commit;876e9ecec227379d1a6128502bc47ef5a1b06406;fvwm/style.c;MINI_ICONS;1;1
+fvwm-2.4.15;commit;5af45c8b2dc756ff6fb99bbf1dd49ceb2f7b22d1;fvwm/builtins.c;MINI_ICONS;1;1
+fvwm-2.4.15;commit;6f7d56af1c14ae5019f74748e9552944874c1998;modules/FvwmButtons/FvwmButtons.c;SHAPE;1;1
+fvwm-2.4.15;commit;0e79fd00ddc566cb1b80792a18bd1549701012d7;fvwm/icons.c;XPM;1;1
+fvwm-2.4.15;release;fvwm-2.4.15;modules/FvwmWharf/FvwmWharf.c;ENABLE_SOUND;1;1
+fvwm-2.4.15;release;fvwm-2.4.15;modules/FvwmWharf/FvwmWharf.c;ENABLE_SOUND;1;1
+gcc-4.9.2;release;Gcc-4.1;gcc/asan.c;ASM_OUTPUT_DEF;;
+gcc-4.9.2;release;Gcc-4.1;gcc/combine-stack-adj.c;!PUSH_ROUNDING;;
+gcc-4.9.2;release;Gcc-4.1;gcc/cse.c;HAVE_cc0 && FLOAT_STORE_FLAG_VALUE;;
+gnome-keyring-3.14.0;release;gnome-keyring-2.19.6;common/gkr-location.c;!WITH_TESTS;1;1
+gnome-vfs-2.0.4;release;gnome-vfs-2.13.92;modules/http-proxy.c;!ENABLE_IPV6;1;1
+gnuplot-4.6.1;commit;6d5d2d137128de5ddcb8a86f639cdb1ef3122372;src/graph3d.c;!PM3D;1;1
+gnuplot-4.6.1;commit;b11d11011d613cf467bca327415e960e4f86b8ea;src/graphics.c;GP_ENH_EST;1;1
+gnuplot-4.6.1;commit;4125d96e786eea07f160975e6272d211bb46b360;src/eval.c;GP_STRING_VARS;1;1
+gnuplot-4.6.1;commit;34e510f846bf4fae0425a269d3f516ee9b72f51b;src/mouse.c;GP_STRING_VARS;1;1
+gnuplot-4.6.1;commit;85f70fc2b382876e38f80e569c36dfe58f0d9033;src/gplt_x11.c;USE_MOUSE;1;1
+gnuplot-4.6.1;commit;c43ae637ca94578dff954d1ee04b3e09613235d0;src/wxterminal/gp_cairo.c;WITH_IMAGE;1;1
+gnuplot-4.6.1;commit;75383d36ad2be6c9d97c133063a19b22bd7bde97;src/util.c;VA_START && ANSI_C;2;1
+gnuplot-4.6.1;commit;f174b948be993aab0b8e39e47dd99ae80dd74583;src/plot.c;VMS && !ATARI && !MTOS;3;1
+gnuplot-4.6.1;release;gnuplot-4.6.1;src/parse.c;lint;1;1
+gnuplot-4.6.1;release;gnuplot-4.6.1;src/datafile.c;!WITH_IMAGE && EAM_OBJECTS;2;1
+irssi-0.8.15;commit;2e085041d682d3e9b19e638df7ced48cf11dfd68;src/core/recode.c;HAVE_GLIB2;1;1
+irssi-0.8.15;commit;9c245925ce3308aa87748b89bbda5e165fd93ce3;src/core/recode.c;HAVE_GLIB2;1;1
+irssi-0.8.15;commit;4664405b8bb7e7bba78b8d8cfed0879f5b76f891;src/core/modules-load.c;HAVE_GMODULE;1;1
+irssi-0.8.15;commit;00e876ef667ff44e203af166935809912210e9c4;src/core/modules.c;HAVE_GMODULE;1;1
+libpng-1.5.14;commit;cdf140beecea06314413240d702ec062421eafac;pngtrans.c;PNG_USELESS_TESTS_SUPPORTED;1;1
+libpng-1.5.14;commit;31f4e528424cebd1220ba045ce4eb874272242c4;pngrutil.c;PNG_READ_sPLT_SUPPORTED && !PNG_POINTER_INDEXING_SUPPORTED;2;1
+libpng-1.5.14;release;libpng-1.5.14;contrib/libtests/pngvalid.c;!PNG_READ_INTERLACING_SUPPORTED;1;1
+libpng-1.5.14;release;libpng-1.6.0;pngtest.c;PNG_WRITE_SUPPORTED && PNG_WRITE_FLUSH_SUPPORTED;2;1
+libssh-0.5.3;commit;fadbe80c4389185f80b3d5a8814510f957a6ca8a;src/options.c;!_MSC_VER;1;1
+libssh-0.5.3;commit;f402e8d113258d23e10cb2f31ed964bf535bd55a;libssh/keys.c;!_WIN32;1;1
+libssh-0.5.3;commit;bf4d29b96399f5b1ed8927156b746d8d2f647ba2;libssh/auth.c;!_WIN32;1;1
+libssh-0.5.3;commit;33e95792ce607dc600534ae6434d656728cbf415;src/pki_crypto.c;HAVE_OPENSSL_ECC;1;1
+libssh-0.5.3;commit;0a4ea19982900db1a7942c956c8c2f3ba80aedae;src/pki.c;WITH_SERVER;1;1
+libssh-0.5.3;commit;8567fc8d8cf31cce0e2bf98321b6acd4bb9b4cfb;src/messages.c;WITH_SERVER;1;1
+libssh-0.5.3;commit;36e4c2e5bcbdfcfcdf4c7b1df9b6b51be05b7b56;src/messages.c;WITH_SERVER;1;1
+libssh-0.5.3;commit;840cecbe0e68bc71c0afea4b3d79bd5702d403d0;libssh/options.c;WITH_SERVER;1;1
+libssh-0.5.3;commit;b7a7c816df48e7a66b452f5285f5cde3b3894a22;libssh/kex.c;WITH_SSH1;1;1
+libssh-0.5.3;release;libssh-0.5.3;src/channels.c;WITH_SSH1;1;1
+libssh-0.5.3;release;libssh-0.5.3;src/dh.c;!HAVE_LIBGCRYPT && !HAVE_LIBCRYPTO;2;1
+libssh-0.5.3;release;libssh-0.5.3;src/keys.c;!HAVE_LIBGCRYPT && !HAVE_LIBCRYPTO;2;1
+libssh-0.5.3;release;libssh-0.5.3;src/keys.c;!HAVE_LIBGCRYPT && !HAVE_LIBCRYPTO;2;1
+libssh-0.5.3;release;libssh-0.5.3;src/keyfiles.c;!HAVE_LIBGCRYPT && !HAVE_LIBCRYPTO;2;1
+libssh-0.5.3;release;libssh-0.5.3;src/keyfiles.c;!HAVE_LIBGCRYPT && !HAVE_LIBCRYPTO;2;1
+libssh-0.5.3;release;libssh-0.5.3;src/known_hosts.c;!HAVE_LIBGCRYPT && !HAVE_LIBCRYPTO;2;1
+libssh-0.5.3;release;libssh-0.5.3;src/client.c;!HAVE_LIBGCRYPT && !HAVE_LIBCRYPTO;2;1
+libxml2-2.9.0;commit;3f6f7f64ce4c8e4d4a9b7dd4750bc24203a78dce;xpath.c;WIN32;1;1
+libxml2-2.9.0;release;libxml2-2.9.0;xmlregexp.c;DEBUG_REGEXP_GRAPH;1;1
+lighttpd-1.4.30;commit;0347a26b370490aabe03b907b79a650705e75676;src/condition.c;HAVE_PCRE_H;1;1
+linux-3.18.5;commit;e67bc51e574ffe3c4bc1e09cab7658b1e780b4ce;include/linux/kernel.h;!CONFIG_TRACING;1;1
+linux-3.18.5;commit;0988c4c7fb5881377ec20a6452f739a722e97c6b;include/linux/if_vlan.h;!CONFIG_VLAN_8021Q;1;1
+linux-3.18.5;commit;60e233a56609fd963c59e99bd75c663d63fa91b6;drivers/base/core.c;!HOTPLUG;1;1
+linux-3.18.5;commit;30e053248da178cf6154bb7e950dc8713567e3fa;fs/reiserfs/namei.c;!SECURITY;1;1
+linux-3.18.5;commit;809e660f438fc5a69bf57630a85bcd8112263f37;arch/arm/mm/fault.c;CONFIG_ARM_LPAE;1;1
+linux-3.18.5;commit;218ad12f42e0b6207105cde8fd13017d1ed449e4;include/net/inet_hashtables.h;CONFIG_NUMA;1;1
+linux-3.18.5;commit;8c8296223f3abb142be8fc31711b18a704c0e7d8;fs/proc/task_mmu.c;CONFIG_PROC_PAGE_MONITOR;1;1
+linux-3.18.5;commit;d7e9711760a17aef3a94fc6dff4759fa5961de25;fs/quota/dquot.c;CONFIG_QUOTA_DEBUG;1;1
+linux-3.18.5;commit;208d89843b7b03978d8e748b8b991c1be81c4f43;net/ipv4/udp.c;HIGHMEM;1;1
+linux-3.18.5;commit;bc8cec0dff072f1a45ce7f6b2c5234bb3411ac51;fs/jffs2/super.c;JFFS2_FS_WBUF_VERIFY;1;1
+linux-3.18.5;commit;51fd36f3fad8447c487137ae26b9d0b3ce77bb25;kernel/time/tick-sched.c;!A64BIT && !KTIME_SCALAR;2;1
+linux-3.18.5;commit;63878acfafbc7a6ff90a2f8b3e31f0889bc61af6;arch/arm/mach-omap2/board-omap3pandora.c;ARCH_OPAM3 && !PM;2;1
+linux-3.18.5;commit;f48ec1d7885281a9c6cd7779d61f321d1b1fd741;block/cfq-iosched.c;CONFIG_CFQ_GROUP_IOSCHED && !CONFIG_DEBUG_BLK_CGROUP;2;1
+linux-3.18.5;commit;6e2b75740bed35df98b8113300579e13ed2ce848;kernel/module.c;CONFIG_MODULE_UNLOAD && CONFIG_SMP;2;1
+linux-3.18.5;commit;36855dcfc980f247909b8f63776664c6ccb6f183;arch/blackfin/mach-common/pm.c;CONFIG_PM_BFIN_SLEEP_DEEPER && CONFIG_BF60x;2;1
+linux-3.18.5;commit;657e9649e745b06675aa5063c84430986cdc3afa;net/ipv4/tcp_minisocks.c;CONFIG_TCP_MD5SIG && PREEMPT;2;1
+linux-3.18.5;commit;7acf6cd80b201f77371a5374a786144153629be8;drivers/tty/pty.c;CONFIG_UNIX98_PTYS && DEVPTS_MULTIPLE_INSTANCES;2;1
+linux-3.18.5;commit;f3d83e2415445e5b157bef404d38674e9e8de169;init/main.c;CONFIG_X86 && ACPI_WMI;2;1
+linux-3.18.5;commit;472a474c6630efd195d3738339fd1bdc8aa3b1aa;arch/x86/kernel/smpboot.c;CONFIG_X86_32 && CONFIG_X86_BIGSMP;2;1
+linux-3.18.5;commit;1f758a4341ac83289a549e6ba2d29a08cf639717;drivers/net/arm/ep93xx_eth.c;EP93XX_ETH && !ZONE_DMA;2;1
+linux-3.18.5;commit;0dc77b6dabec8fd298392018cc0de5214af2dc43;drivers/extcon/extcon-class.c;EXTCON && SYSFS && CONFIG_ANDROID;3;1
+linux-3.18.5;commit;d549f55f2e132e3d1f1288ce4231f45f12988bbf;drivers/infiniband/hw/ocrdma/ocrdma_main.c;IS_ENABLEDCONFIG_IPV6 && !IS_ENABLEDCONFIG_VLAN_8021Q;2;1
+linux-3.18.5;commit;6515e48932c8bf04227f9dd638c8ac634f89ba24;arch/arm/mach-omap2/board-generic.c;MACH_OMAP_H4 && !ARCH_OMAP2420;2;1
+linux-3.18.5;commit;e39363a9def53dd4086be107dc8b3ebca09f045d;net/core/netpoll.c;NETPOLL && !IS_ENABLEDCONFIG_IPV6;2;1
+linux-3.18.5;commit;c708c57e247775928b9a6bce7b4d8d14883bf39b;arch/s390/crypto/prng.c;S390 && S390_PRNG;2;1
+linux-3.18.5;commit;d530db0db90378b5674cb78d9c0cfcc83f851a5e;drivers/net/3c59x.c;VORTEX_DEBUG && !CONFIG_PCI;2;1
+linux-3.18.5;commit;76baeebf7df493703eeb4428eac015bdb7fabda6;arch/x86/pci/common.c;__i386__ && CONFIG_NUMA && CONFIG_PCI_BIOS;3;1
+linux-3.18.5;commit;91ea8207168793b365322be3c90a4ee9e8b03ed4;arch/parisc/mm/init.c;CONFIG_PARISC_PAGE_SIZE_4KB && CONFIG_DISCONTIGMEM && PROC_PAGE_MONITOR;3;1
+linux-3.18.5;commit;1c17e4d4437d8045a596d9f06c1558dc09e2b372;kernel/rcutree_plugin.h;CONFIG_TREE_PREEMPT_RCU && CONFIG_RCU_CPU_STALL_INFO && !CONFIG_RCU_FAST_NO_HZ;3;1
+linux-3.18.5;commit;f7ab9b407b3bc83161c2aa74c992ba4782e87c9c;drivers/gpu/drm/i915/i915_dma.c;DRM_I915 && SHMEM && !TMPFS;3;1
+linux-3.18.5;commit;ee3f34e857238a4552c68d860348893d7728bcab;net/sctp/ipv6.c;IP_SCTP && IPV6 && SCTP_DBG_MSG;3;1
+linux-3.18.5;commit;6252547b8a7acced581b649af4ebf6d65f63a34b;drivers/base/dd.c;I2C && TWL4030_CORE && IRQ_DOMAIN && !OF_IRQ;4;1
+linux-3.18.5;commit;221ac329e93fe2a676346af2e98e311251648f69;arch/powerpc/kernel/kprobes.c;!CONFIG_PPC64 && KPROBES && !KGDB && !XMON && !BDI_SWITCH;5;1
+linux-3.18.5;commit;eb91f1d0a531289e18f5587dc197d12a251c66a3;init/main.c;CONFIG_DEBUG_SLAB && CONFIG_LOCKDEP && TRACE_IRQFLAGS && PROVE_LOCKING && CONFIG_NUMA;5;1
+linux-3.18.5;commit;0f8f8094d28eb53368ac09186ea6b3a324cc7d44;mm/slab.c;CONFIG_LOCKDEP && CONFIG_DEBUG_SLAB && !CONFIG_DEBUG_SLAB_LEAK && PPC_256K_PAGES && FORCE_MAX_ZONEORDER;5;1
+linux-3.18.5;release;linux-3.14.6;kernel/sched/proc.c;CONFIG_NO_HZ_COMMON;1;1
+linux-3.18.5;release;linux-3.14.6;kernel/sched/rt.c;CONFIG_SCHED_DEBUG;1;1
+lua-5.2.1;commit;b70b777f37b85a6d4ef72b8e08f2469b4777266d;src/loadlib_rel.c;!__CYGWIN__ && !_WIN32 && !__linux__ && !__sun && !__FreeBSD__ && !__BSD__ && !__APPLE__;7;1
+totem-2.17.5;release;totem-2.17.5;src/totem.c;HAVE_GTK_ONLY;1;1
+vim-6.0;commit;e5c6ef7d760fb2ee75a9fed3e971a2c1d46c5eb8;src/netbeans.c;!FEAT_GUI_W32 && !PROTO && !FEAT_GUI_MOTIF && !FEAT_GUI_GTK;4;1
+vim-6.0;release;vim-73;src/ex_cmds.c;WIN32;1;1
+vim-6.0;release;vim-6.0;src/os_unix.c;(FEAT_MOUSE_DEC &&  FEAT_MOUSE_GPM)||(FEAT_MOUSE_JSB && FEAT_MOUSE_PTERM);2;1
+vim-6.0;release;vim-3.0;src/memfile.c;!AMIGA && !UNIX && !MSDOS;3;1
+vim-6.0;release;vim-73;src/if_mzsch.c; !FEAT_GUI_W32 && !FEAT_GUI_GTK && !FEAT_GUI_MOTIF && !FEAT_GUI_ATHENA && !FEAT_GUI_MAC && FEAT_GUI;6;1
+xfig-3.2.4;release;xfig-3.2.4;w_cmdpanel.c;FIXED_JAPANESE_PDF;1;1
+xterm-224;release;xterm-224;main.c;!USE_USG_PTYS && USE_ISPTS_FLAG;2;1
+xterm-224;release;xterm-224;main.c;(__GLIBC__ && USE_ISPTS_FLAG)||(__MVS__ && USE_ISPTS_FLAG);2;1

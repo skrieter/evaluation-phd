@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.spldev</groupId>
+		<artifactId>executable-project</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../executable-project/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>evaluation-pc-sampling</artifactId>
+	<packaging>jar</packaging>
+
+	<name>PC-Sampling-Evaluation</name>
+	<description></description>
+	<url>https://github.com/skrieter/pc-sampling</url>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.spldev</groupId>
+			<artifactId>util</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.spldev</groupId>
+			<artifactId>evaluation</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.spldev</groupId>
+			<artifactId>formula</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.spldev</groupId>
+			<artifactId>formula-analysis</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.spldev</groupId>
+			<artifactId>pc-extraction</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+</project>

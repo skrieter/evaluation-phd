@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="Sampling Evaluation" default="jar" basedir=".">
+
+	<!-- Copy from build_jar_template.properties and edit accordingly -->
+	<property file = "build_jar.properties"/>
+
+	<!-- Set JAR name -->
+	<property name="build.jar.version" value="3.6.2" />
+	<property name="build.jar.name" value="pc_sampling_evaluation.jar" />
+
+	<!-- Constants -->
+	<property name="base.dir" value="." />
+	<property name="src.dir" value="${base.dir}/src" />
+	<property name="lib.dir" value="${base.dir}/lib" />
+	
+	<property name="build.dir" value="${base.dir}/build"/>
+	<property name="build.bin.dir" value="${build.dir}/classes"/>
+	<property name="build.jar.dir" value="${build.dir}/jar"/>
+	<property name="build.jar.lib.dir" value="${build.jar.dir}/lib"/>
+	<property name="build.jar.path" value="${build.jar.dir}/${build.jar.name}" />
+	<property name="build.version.path" value="${build.bin.dir}/version.txt" />
+	
+	<target name="jar">
+		<mkdir dir="${build.jar.lib.dir}" />
+		
+		<!-- Copy libs -->
+		<copy todir="${build.jar.lib.dir}">
+			<fileset dir="${lib.dir}" />
+		</copy>
+		
+		<path id="classpath">
+			<!--<fileset dir="${build.jar.lib.dir}" includes="**/*.jar" />-->
+			<fileset dir="${build.jar.lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+		
+		<pathconvert property="jar.class.path" pathsep=" ">
+			<path refid="classpath"/>
+			<mapper>
+				<chainedmapper>
+				   <flattenmapper/>
+				   <globmapper from="*.jar" to="lib/*.jar"/>
+				</chainedmapper>
+			</mapper>
+		</pathconvert>
+
+		<mkdir dir="${build.bin.dir}" />
+		<javac
+			srcdir="${src.dir}"
+			destdir="${build.bin.dir}"
+			classpathref="classpath"
+			debug="on" includeantruntime="false" fork="yes"
+			source="1.8" target="1.8">
+			<compilerarg value="-Xlint" />
+		</javac>
+		
+		<echo message="${jar.class.path}"/>
+		
+		<!-- Get current timestamp -->
+		<tstamp>
+			<format property="timeStamp" pattern="yyyy/MM/dd HH-mm-ss" />
+		</tstamp>
+
+		<!-- Create version file -->
+		<echo file="${build.version.path}" append="false">Sampling Evaluation Version:	${build.jar.version}${line.separator}Build Time:         ${timeStamp}${line.separator}</echo>
+
+		<!-- Build jar file, including source files and license file -->
+		<jar destfile="${build.jar.path}" basedir="${build.bin.dir}" compress="true">
+			<fileset dir="${src.dir}" includes="**/*.java" />
+			<manifest>
+				<attribute name="Main-Class" value="de.ovgu.sple.sampling.SamplingChallenge"/>
+				<attribute name="Class-Path" value="${jar.class.path}"/>
+		    </manifest>
+		</jar>
+
+		<copy todir="${base.dir}" file="${build.jar.path}"  />
+	</target>
+	
+	<target name="clean" description="Delete the Build Folder">
+		<delete file="${build.jar.name}" />
+		<delete dir="${build.dir}" />
+	</target>
+
+</project>
